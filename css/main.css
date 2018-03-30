@@ -45,6 +45,22 @@ body {
    height: 80vh;
 }
 
+.content:before {
+   content: '';
+   position: absolute;
+   left: var(--x);
+   top: var(--y);
+   width: var(--size);
+   height: var(--size);
+   background: radial-gradient(circle closest-side, #560b0b, transparent);
+   transform: translate(-50%, -50%);
+   transition: width .2s ease, height .2s ease;
+}
+
+.content:hover {
+   --size: 400px;
+}
+
 span a {
    pointer-events: auto;
 }
