@@ -39,10 +39,15 @@ body {
 }
 
 .content {
+   position: relative;
+   appearance: none;
    color: #ffF;
    background-color: #c50000;
    padding: 1px 60px;
    height: 80vh;
+   outline: none;
+   overflow: hidden;
+   
 }
 
 .content:before {
