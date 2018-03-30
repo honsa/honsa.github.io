@@ -47,7 +47,7 @@ body {
    height: 80vh;
    outline: none;
    overflow: hidden;
-   
+   cursor: pointer;
 }
 
 .content:before {
