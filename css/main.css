@@ -6,6 +6,7 @@ body {
 .fancy {
    position: relative;
    appearance: none;
+   height: 20vh;
    background: #55c52d;
    padding: 1em 2em;
    border: none;
@@ -38,9 +39,7 @@ body {
 }
 
 .content {
-   color: #808080;
-}
-
-.main-title {
-   color: #FF00FF;
+   color: #ffF;
+   padding: 60px 1px;
+   height: 80vh;
 }
