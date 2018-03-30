@@ -44,3 +44,7 @@ body {
    padding: 60px 1px;
    height: 80vh;
 }
+
+span a {
+   pointer-events: all;
+}
