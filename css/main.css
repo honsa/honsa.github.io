@@ -46,5 +46,5 @@ body {
 }
 
 span a {
-   pointer-events: all;
+   pointer-events: auto;
 }
