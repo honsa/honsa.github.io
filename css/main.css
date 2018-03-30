@@ -1,3 +1,7 @@
+*{
+  border: 5px solid greenyellow;
+}
+
 body {
    font-family: sans-serif;
    font-size: 24px;
