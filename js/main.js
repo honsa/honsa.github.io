@@ -1,4 +1,4 @@
-document.querySelector('.fancy').onmousemove = function (e) {
+document.querySelector('header').onmousemove = function (e) {
 
     var x = e.pageX - e.target.offsetLeft;
     var y = e.pageY - e.target.offsetTop;
