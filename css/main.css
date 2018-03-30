@@ -14,7 +14,6 @@ body {
    font-size: 1.2em;
    cursor: pointer;
    outline: none;
-   overflow: hidden;
 }
 
 .fancy:before {
@@ -46,7 +45,6 @@ body {
    padding: 1px 60px;
    height: 80vh;
    outline: none;
-   overflow: hidden;
    cursor: pointer;
 }
 
