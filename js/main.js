@@ -1,4 +1,4 @@
-let mouseTarget = function(selector){
+var mouseTarget = function(selector){
     document.querySelector(selector).onmousemove = function (e) {
 
         var x = e.pageX - e.target.offsetLeft;
