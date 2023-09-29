@@ -1,0 +1,28 @@
+body {
+    font-family: "Courier New", sans-serif;
+    font-weight: bold;
+    margin: 0.9rem 0.5rem 0.9rem 0.5rem;
+    padding: 0.9rem 1rem 0.92rem 1rem;
+}
+
+h1 {
+    outline: 1px solid sandybrown;
+    padding: 0.9rem 1rem 0.92rem 1rem;
+    display: inline-block;
+}
+
+button {
+    border: 3px solid lightskyblue;
+    transition: outline-color ease-in-out 7s,
+                filter ease-in-out 0.3s;
+    font-weight: bold;;
+    margin: 0.9rem 0.5rem 0.9rem 0.5rem;
+    padding: 0.9rem 1rem 0.92rem 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    outline-color: lime;
+    box-shadow: #8fff60;
+    filter: invert(100%);
+}
