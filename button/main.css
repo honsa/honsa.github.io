@@ -20,9 +20,21 @@ button {
     padding: 0.9rem 1rem 0.92rem 1rem;
 }
 
+.rocket {
+    display: block;
+    animation: launch 2s linear infinite;
+    border-bottom: 1rem solid lime;
+    border-top: 1rem solid orange;
+}
+
 button:hover {
     cursor: pointer;
     outline-color: lime;
     box-shadow: #8fff60;
     filter: invert(100%);
+}
+
+@keyframes launch {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(1rem); }
 }
