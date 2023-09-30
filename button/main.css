@@ -20,6 +20,16 @@ button {
     padding: 0.9rem 1rem 0.92rem 1rem;
 }
 
+button::after {
+    content: " ❤️";
+    height: 1rem;
+    width: 1rem;
+}
+
+button:first-of-type::after {
+    content: "";
+}
+
 .rocket {
     display: block;
     animation: launch 2s linear infinite;
