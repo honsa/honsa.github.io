@@ -16,6 +16,8 @@ button.addEventListener('click', expand);
 let cpuEl = document.getElementById('cpu');
 
 cpuEl.textContent += cpu;
+
+let heartCount = document.getElementById('hearts')
 /**
  * Copy once if Button one is clicked, copy twice if Button two is clicked and so on
  *
@@ -53,6 +55,10 @@ function expand(e) {
     }
 }
 
+function fillHearts(){
+
+}
+
 /**
  *
  * @param node
@@ -66,6 +72,16 @@ function createCopy(node) {
     copy.setAttribute('data-i', i);
     copy.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
+    /**
+     * Add banana on pi
+     */
+    if(i %= 3.14){
+        copy.textContent += ' 🍌';
+    }
+
+    /**
+     * Important
+     */
     copy.addEventListener('click', expand);
 
     node.parentNode.appendChild(copy);
@@ -74,4 +90,5 @@ function createCopy(node) {
 
     i++;
     buttonCount++;
+    heartCount.textContent = i;
 }
