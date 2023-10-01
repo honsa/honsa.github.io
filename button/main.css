@@ -31,6 +31,7 @@ button::after {
     content: " ❤️";
     height: 1rem;
     width: 1rem;
+    animation: scale 2s linear infinite;
 }
 
 button:first-of-type::after {
@@ -54,4 +55,9 @@ button:hover {
 @keyframes launch {
     0% { transform: translateY(100%); }
     100% { transform: translateY(1rem); }
+}
+
+@keyframes scale {
+    0% { font-size: 3rem }
+    100% { font-size: 7rem }
 }
