@@ -6,12 +6,6 @@ body {
     padding: 0.9rem 1rem 0.92rem 1rem;
 }
 
-h1 {
-    outline: 1px solid sandybrown;
-    padding: 0.9rem 1rem 0.92rem 1rem;
-    display: inline-block;
-}
-
 dd {
     margin-inline-start: 0;
     border: 0.1rem dashed orange;
