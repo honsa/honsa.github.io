@@ -14,7 +14,8 @@ h1 {
 
 dd {
     margin-inline-start: 0;
-    outline: 1rem dashed orange;
+    border: 0.1rem dashed orange;
+    animation: scale 2s linear infinite;
 }
 
 /* Effects */
@@ -36,6 +37,7 @@ button::after {
 
 button:first-of-type::after {
     content: "";
+    animation: initial;
 }
 
 .rocket {
@@ -51,6 +53,8 @@ button:hover {
     box-shadow: #8fff60;
     filter: invert(100%);
 }
+
+.scale {  animation: scale 2s linear infinite;}
 
 @keyframes launch {
     0% { transform: translateY(100%); }
