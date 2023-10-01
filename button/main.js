@@ -1,5 +1,5 @@
 /**
- * @type {number}
+ * @type {boolean}
  */
 let i = 0;
 let buttons = false;
@@ -75,7 +75,7 @@ function createCopy(node) {
     /**
      * Add banana on pi
      */
-    if(i %= 3.14){
+    if(i % 3.14 === 0){
         copy.textContent += ' 🍌';
     }
 
