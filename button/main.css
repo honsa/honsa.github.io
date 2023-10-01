@@ -1,3 +1,4 @@
+/* Layout */
 body {
     font-family: "Courier New", sans-serif;
     font-weight: bold;
@@ -11,6 +12,12 @@ h1 {
     display: inline-block;
 }
 
+dd {
+    margin-inline-start: 0;
+    outline: 1rem dashed orange;
+}
+
+/* Effects */
 button {
     border: 3px solid lightskyblue;
     transition: outline-color ease-in-out 7s,
