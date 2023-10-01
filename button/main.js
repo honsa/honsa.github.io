@@ -67,7 +67,7 @@ function createCopy(node) {
     let copy = node.cloneNode();
 
     copy.id = 'next-' + i;
-    copy.textContent = 'I am Button ' + i;
+    copy.textContent = 'I am Button ' + i + ' click me ;)';
     copy.title = 'I cannot expand endless...';
     copy.setAttribute('data-i', i);
     copy.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
