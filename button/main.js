@@ -2,23 +2,47 @@
  * @type {number}
  */
 let i = 0;
+
+/**
+ *
+ * @type {number}
+ */
 let bananas = 0;
+
+/**
+ *
+ * @type {number}
+ */
 let rockets = 0;
+
+/**
+ *
+ * @type {boolean}
+ */
 let buttons = false;
+
+/**
+ *
+ * @type {number}
+ */
 let buttonCount = 0;
 
+/**
+ *
+ * @type {number}
+ */
 let cpu = navigator.hardwareConcurrency;
+
 /**
  * @type {HTMLElement}
  */
-let button = document.getElementById('one-and-only');
-
-button.addEventListener('click', expand);
-
 let cpuEl = document.getElementById('cpu');
-
 cpuEl.textContent += cpu;
 
+let button = document.getElementById('one-and-only');
+button.addEventListener('click', expand);
+
+// Select other elements later to fill textContent faster
 let heartCount = document.getElementById('hearts')
 let rocketCount = document.getElementById('bananas')
 let bananaCount = document.getElementById('rockets')
