@@ -1,7 +1,9 @@
 /**
- * @type {boolean}
+ * @type {number}
  */
 let i = 0;
+let bananas = 0;
+let rockets = 0;
 let buttons = false;
 let buttonCount = 0;
 
@@ -18,6 +20,9 @@ let cpuEl = document.getElementById('cpu');
 cpuEl.textContent += cpu;
 
 let heartCount = document.getElementById('hearts')
+let rocketCount = document.getElementById('bananas')
+let bananaCount = document.getElementById('rockets')
+
 /**
  * Copy once if Button one is clicked, copy twice if Button two is clicked and so on
  *
@@ -31,6 +36,7 @@ function expand(e) {
     }
 
     let targetCount = Number(attribute);
+
     if (0 === targetCount) {
 
         console.log(`Button ${i} created ;)`);
@@ -75,8 +81,31 @@ function createCopy(node) {
     /**
      * Add banana on pi
      */
-    if(i % 3.14 === 0){
+    if(i % 3.14 === 0.00){
         copy.textContent += ' 🍌';
+        bananas++;
+    }
+
+    /**
+     * Add rocket on prime
+     */
+    if(isPrime(i)){
+        copy.textContent += ' 🚀';
+        rockets++;
+    }
+
+    /**
+     *
+     * @param number
+     * @returns {boolean}
+     */
+    function isPrime(number) {
+        for(let i = 2, sqrt = Math.sqrt(number); i <= sqrt; i++) {
+            if(number % i === 0) {
+                return false;
+            }
+        }
+        return number > 1;
     }
 
     /**
@@ -91,4 +120,6 @@ function createCopy(node) {
     i++;
     buttonCount++;
     heartCount.textContent = i;
+    rocketCount.textContent = bananas;
+    bananaCount.textContent = rockets;
 }
