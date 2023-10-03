@@ -1,4 +1,4 @@
 # honsa.github.io
-You cannot get more bananas than one.
+You can only get more bananas than one if you find the answer for pi.
 
 https://honsa.github.io/button/index.html
