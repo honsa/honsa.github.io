@@ -1,0 +1,27 @@
+body {
+    overflow: hidden;
+}
+
+button {
+    background-color: #0064a6;
+    color: azure;
+    height: 30dvmin;
+    width: 30dvmin;
+    font-size: 6rem;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out;
+
+    &:hover {
+        background-color: rgba(0, 100, 166, 0.5);
+        scale: 1.1;
+    }
+    &.selected {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100dvmin;
+        width: 100dvmin;
+        font-size: 28rem;
+        font-family: "Sitka Display", sans-serif;
+    }
+}
