@@ -5,8 +5,8 @@ body {
 button {
     background-color: #0064a6;
     color: azure;
-    height: 60svmin;
-    width: 60svmin;
+    height: 20rem;
+    width: 20rem;
     font-size: 6rem;
     cursor: pointer;
     transition: scale 0.3s ease-in-out;
