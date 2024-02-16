@@ -4,6 +4,7 @@ body {
     font-weight: bold;
     margin: 0.9rem 0.5rem 0.9rem 0.5rem;
     padding: 0.9rem 1rem 0.92rem 1rem;
+    overflow: hidden;
 }
 
 dd {
