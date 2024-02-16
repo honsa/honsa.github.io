@@ -1,16 +1,16 @@
 function createButton(name) {
-    let button = document.createElement("button");
+    let button = document.createElement('button');
     button.innerHTML = name;
     button.onclick = (e) => {
 
-        if(e.target.classList.contains("selected")) {
-            e.target.classList.remove("selected");
+        if(e.target.classList.contains('selected')) {
+            e.target.classList.remove('selected');
         } else {
-            e.target.classList.add("selected");
+            e.target.classList.add('selected');
         }
     };
 
-    document.body.appendChild(button);
+    main.appendChild(button);
 }
 
 function fibonacciNumbers() {
@@ -23,5 +23,7 @@ function fibonacciNumbers() {
         nextNumber = fibNumbers[fibNumbers.length - 1] + fibNumbers[fibNumbers.length - 2];
     }
 }
+
+let main = document.getElementById('main');
 
 fibonacciNumbers();
