@@ -17,7 +17,7 @@ function fibonacciNumbers() {
     let fibNumbers = [0, 1];
     let nextNumber = fibNumbers[fibNumbers.length - 1] + fibNumbers[fibNumbers.length - 2];
 
-    while (nextNumber <= 21) {
+    while (nextNumber <= 34) {
         fibNumbers.push(nextNumber);
         createButton(nextNumber);
         nextNumber = fibNumbers[fibNumbers.length - 1] + fibNumbers[fibNumbers.length - 2];
