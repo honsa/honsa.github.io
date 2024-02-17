@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Estimate with points</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </head>
 <body>
 
