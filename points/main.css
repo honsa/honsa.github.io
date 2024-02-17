@@ -8,7 +8,7 @@ body {
     overflow: hidden;
     background-color: var(--tertiary-color);
     padding: 25px 50px 25px 50px;
-    color: var(--secondary-color);
+    color: azure;
 }
 
 #main {
@@ -54,6 +54,6 @@ button {
     }
 
     &.visible {
-        color: var(--secondary-color);
+        color: azure;
     }
 }
