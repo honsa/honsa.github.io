@@ -3,7 +3,12 @@ function createButton(name) {
     button.innerHTML = name;
     button.onclick = (e) => {
         if(e.target.classList.contains('selected')) {
-            e.target.classList.remove('selected');
+            if(e.target.classList.contains('visible')){
+                e.target.classList.remove('visible');
+                e.target.classList.remove('selected');
+            } else{
+                e.target.classList.add('visible');
+            }
         } else {
             e.target.classList.add('selected');
         }
