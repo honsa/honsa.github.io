@@ -5,7 +5,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
     background-color: var(--tertiary-color);
     padding: 25px 50px 25px 50px;
     color: azure;
@@ -22,8 +22,8 @@ body {
 button {
     background-color: var(--primary-color);
     color: azure;
-    height: 20rem;
-    width: 20rem;
+    height: 10rem;
+    width: 10rem;
     font-size: 8rem;
     font-weight: bold;
     cursor: pointer;
