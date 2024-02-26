@@ -24,7 +24,7 @@ button {
     color: azure;
     height: 15rem;
     width: 15rem;
-    font-size: 70svw;
+    font-size: 6rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -48,7 +48,7 @@ button {
         left: 0;
         height: 100svh;
         width: 100svw;
-        font-size: 8rem;
+        font-size: 70svw;
         font-family: "Sitka Display", sans-serif;
         z-index: 1000;
     }
