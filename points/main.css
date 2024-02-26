@@ -48,7 +48,7 @@ button {
         left: 0;
         height: 100svh;
         width: 100svw;
-        font-size: 12rem;
+        font-size: 8rem;
         font-family: "Sitka Display", sans-serif;
         z-index: 1000;
     }
