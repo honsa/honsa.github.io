@@ -7,7 +7,7 @@ const filesToCache = [
 ];
 
 /**
- * Add the files from the cache
+ * Add the files to the cache
  */
 self.addEventListener('install', (event) => {
     event.waitUntil(
