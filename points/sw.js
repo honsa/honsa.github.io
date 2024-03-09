@@ -1,4 +1,4 @@
-const staticCacheName = 'points-pwa-0.0.2';
+const staticCacheName = 'points-pwa-0.0.3';
 const filesToCache = [
     '/',
     '/index.html',
@@ -21,9 +21,15 @@ self.addEventListener('install', (event) => {
  */
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request)
+        caches.match(event.request) // Try to find the requested resource in the cache
             .then(response => {
-                return response || fetch(event.request);
+                // If found in cache, return it (offline response)
+                if (response) {
+                    return response;
+                }
+
+                // If not in cache, fetch from the network (fallback)
+                return fetch(event.request);
             })
     );
 });
