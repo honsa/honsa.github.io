@@ -1,4 +1,4 @@
-const staticCacheName = 'points-pwa-0.0.3';
+const staticCacheName = 'points-pwa-0.0.4';
 const filesToCache = [
     '/',
     '/index.html',
