@@ -2,13 +2,14 @@
     --primary-color: #0064a6;
     --secondary-color: #070707;
     --tertiary-color: #1b1b1b;
+    --quaternary-color: azure;
 }
 
 body {
     overflow: auto;
     background-color: var(--tertiary-color);
     padding: 25px 50px 25px 50px;
-    color: azure;
+    color: var(--quaternary-color);
 }
 
 #main {
@@ -21,7 +22,7 @@ body {
 
 button {
     background-color: var(--primary-color);
-    color: azure;
+    color: var(--quaternary-color);
     height: 7rem;
     width: 7rem;
     font-size: 4rem;
@@ -54,6 +55,6 @@ button {
     }
 
     &.visible {
-        color: azure;
+        color: var(--quaternary-color);
     }
 }
