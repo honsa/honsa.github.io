@@ -37,7 +37,7 @@ button {
         transform: translate(0, 1ex);
     }
 
-    &:focus,&:active{
+    &:active{
         transform: translate(0, 0);
     }
 
