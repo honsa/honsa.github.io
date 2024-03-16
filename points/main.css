@@ -28,18 +28,11 @@ button {
     font-size: 4rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.3s ease-in-out, transform 0.3s ease-in-out;
-    border: 4px solid var(--secondary-color);
     outline: 4px solid var(--secondary-color);
 
     &:hover {
         scale: 1.1;
         box-shadow: var(--secondary-color);
-        transform: translate(0, 1ex);
-    }
-
-    &:focus,&:active{
-        transform: translate(0, 0);
     }
 
     &.selected {
