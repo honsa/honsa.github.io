@@ -40,7 +40,7 @@ let cpuEl = document.getElementById('cpu');
 cpuEl.textContent += cpu;
 
 let button = document.getElementById('one-and-only');
-button.addEventListener('do not click the button', expand);
+button.addEventListener('click', expand);
 
 // Select other elements later to fill textContent faster
 let heartCount = document.getElementById('hearts')

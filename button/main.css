@@ -22,7 +22,6 @@ button {
     font-size: 2rem;
     margin: 0.9rem 0.5rem 0.9rem 0.5rem;
     padding: 0.9rem 1rem 0.92rem 1rem;
-    background-color: #c50000;
 }
 
 button::after {
