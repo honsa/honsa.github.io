@@ -13,7 +13,7 @@ let bananas = 0;
  *
  * @type {number}
  */
-let rockets = 0;
+let rockets = 42;
 
 /**
  *
